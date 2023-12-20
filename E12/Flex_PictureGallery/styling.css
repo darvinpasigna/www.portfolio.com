@@ -1,0 +1,20 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+}
+
+/* convert to flexbox */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 7px;
+    grid-gap: 7px;
+    align-items: center;
+}
+
+
+/* set the image size to 100% */
+.container > img {
+    width: 100%;
+}
+

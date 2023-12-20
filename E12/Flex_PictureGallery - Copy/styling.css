@@ -1,0 +1,39 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+}
+
+/* convert to flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.column:nth-child(1) {
+    background-color: blue;
+}
+
+.column:nth-child(2) {
+    background-color: gray;
+}
+
+.column:nth-child(3) {
+    background-color: yellowgreen;
+}
+
+.column:nth-child(4) {
+    background-color: darkmagenta;
+}
+
+/* occupies the column and wraps if the size is less than min_width */
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* set the image size to 100% */
+img {
+    width: 100%;
+}
+

@@ -1,0 +1,218 @@
+@charset "utf-8";
+@import url("fontawesome-free/css/all.css");
+@import url("normalize.css");
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, verdana, sans-serif;
+    /* outline: 1px dotted red; */
+
+}
+
+body {
+    background: linear-gradient(black, rgba(0, 0, 0, 0.503), black);
+}
+.container {
+   
+}
+
+header {
+    height: 130px;
+    background: linear-gradient(black,#eef5ffa6,#eef5ff96,black);
+    display: flex;
+    #logo {
+        margin-left: 340px;
+        width: 200px;
+        height: 130px;
+        img {
+            max-width: 100%;
+        }
+    }
+   #login {
+    width: 550px;
+    
+   }
+    ul {
+        display: flex;
+        flex-direction: row;
+        float: right;
+    }
+    li {
+        list-style: none;
+        margin: 40px 10px;    
+    }
+ 
+    #upic {
+        background: red;
+        width: 80px;
+        img {
+            max-width: 100%;
+            
+        }
+        
+    }
+}
+
+#nav {
+    background: linear-gradient(#9eb8d9, darkslategrey);
+    height: 100px;
+    ul {
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 30px 50px;
+            a {
+                text-decoration: none;
+                color: rgb(25, 27, 27);
+                font-size: 20px;
+                font-weight: 600;
+            }
+           a:hover, a.active {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 900;
+            color: rgb(39, 77, 77);
+           } 
+            
+        }
+       
+    }
+   
+}
+
+#content {
+    display: flex;
+
+    #education {
+      
+        width: 260px;
+        height: 780px;
+        margin-left: 200px;
+        h3 {
+            padding: 20px 40px;
+        }
+        table {
+            background:  #0b0c0d60;
+            border: 1px solid black;
+            margin: 20px 20px 20px;   
+            border-radius: 20px; 
+            box-shadow: 5px 5px;
+        }
+        li {
+        list-style-type: none;
+        margin: 10px;
+        }
+       
+    }
+
+    #article {
+        #promobanner {
+            width: 800px;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 250px;
+            h3 {
+                padding-top: 40px;
+                margin-right: 10px;
+            }
+            h1 {
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+                padding-top: 30px;
+            }
+        }
+    }
+    #product {
+        height: 350px;
+        text-align: center;
+        padding: 30px 25px 60px 30px;
+        table {
+            border-style: dashed;
+            border-color: #050505a8;
+        }
+    }
+    #banner {
+        /* background:#7c93c3; */
+        height: 210px;
+        padding: 20px;
+        text-align: center;
+        h3 {
+            text-align: center;
+           
+        }
+        #family {
+            display: flex;
+            #ban {
+                background: rgba(2, 29, 80, 0.341);
+                width: 200px;
+                height: 150px;
+                margin: 25px 10px 0 25px;
+                border-style: dashed;
+                border-color: #050505a8;
+                padding: 5px;
+                img{
+                    max-width: 100%;
+                }
+        }
+        }
+    }
+}
+
+#coworker {
+    display: flex;
+   
+    img {
+        max-width: 100%;
+    }
+    table {
+        background: #7c93c3;
+        width: 350px;
+        height: 300px;
+        margin-left: 20px;
+        th {
+            
+            padding: 10px;
+        }
+    }
+}
+
+footer {
+    background: linear-gradient(rgb(155, 155, 185),rgb(12, 12, 56));
+    height: 230px;
+    display: block;
+    text-align: center;
+    background-color: ;
+    #logo {
+        
+        width: 200px;
+    }
+    #copy {
+        background: darkslategray;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 521px) {
+   * {
+    box-sizing: border-box;
+   
+   }
+   
+    #logo {
+       background: wheat;
+       
+    }
+    header {
+      
+        ul {
+            float: none;
+        }
+    }
+    
+}
